@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color-cyan: hsl(185, 75%, 39%);
+    --primary-color-dark-blue: hsl(229, 23%, 23%);
+    --primary-color-gray-blue: hsl(227, 10%, 46%);
+    --secondary-color: hsl(0, 0%, 59%);
+    --primary-font: 'Kumbh Sans'
+
+}
+
+body {
+    font-family: var(--primary-font);
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--primary-color-gray-blue);
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-position-x: left -100px, right -30px;
+    background-position-y: top -300px, bottom -400px;
+    background-color: hsl(185, 75%, 39%);
+    background-repeat: no-repeat;
+    background-size: 750px;
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-card-component {
+    width: 29rem;
+    max-width: 100%;
+    height: 30rem;
+    border-radius: 1rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 4.5rem auto;
+}
+
+.header-img {
+    height: 100%;
+    flex-basis: 10rem;
+    flex-shrink: 1;
+    width: 100%;
+    background: url(images/bg-pattern-card.svg) no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.profile-img {
+    flex-basis: 5rem;
+    flex-shrink: 1;
+}
+
+.user-img {
+    height: 7rem;
+    width: 7rem;
+    background-image: url(./images/image-victor.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: 35%;
+    top: 20%;
+    border: 4px solid white;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.profile {
+    padding: 0 15px;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+h1 {
+    font-size: 1.7em;
+    font-weight: 700;
+    color: var(--primary-color-dark-blue)
+}
+
+.age {
+    padding-left: 0.5em;
+    font-weight: 400;
+    color: var(--primary-color-gray-blue);
+}
+
+.city {
+    font-size: 1.3rem;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    text-align: center;
+    align-items: center;
+    border-top: 1px solid rgba(110, 109, 109, 0.349);
+}
+.facts h2{
+    color: var(--primary-color-dark-blue) ;
+    text-align: center;
+}
